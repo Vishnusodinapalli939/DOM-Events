@@ -5,51 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #span{
-            margin-left: 130px;
+        a{
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div id="myDiv" >
-        <p id="para"></p>
-        <span id="span"></span>
-    </div>
-    <button id="btn">Get OTP</button>
-    <script>
-        let myDiv=document.getElementById("myDiv");
-        let para=document.getElementById("para")
-        myDiv.style.height="200px";
-        myDiv.style.width="300px";
-        myDiv.style.border="2px solid red";
-        btn.addEventListener("click",()=>{
-            let x=((Math.random())*10000);
-            x=Math.floor(Number(x)+Number(10000)).toPrecision(5)
-            document.getElementById("para").innerText=x;
-            para.style.marginLeft="120px";
-            para.style.marginTop="80px";
-            let y=["a","b","c","d"];
-            let z=Math.floor(Math.random() * y.length);
-            document.getElementById("span").innerText=y[z];
-        })
-        btn.addEventListener("dblclick",()=>{
-            document.getElementById("para").innerText="already sent"
-        })
-        para.addEventListener("mouseover",()=>{
-            para.style.border="1px solid red"
-            para.style.width="60px";
-        })
-        para.addEventListener("mousedown",()=>{
-            myDiv.style.backgroundColor="green";
-        })
-        para.addEventListener("mouseup",()=>{
-            myDiv.style.backgroundColor="pink";
-        })
-        myDiv.addEventListener("keydown",()=>{
-            myDiv.style.backgroundColor="none";
-        })
-
-
-    </script>
+    <ul>
+        <li><a href="./otp.html">OTP generator</a> </li>
+        <li><a href="./even_odd.html">EVEN or ODD</a> </li>
+        <li><a href="./password_visible.html">password visible and invisible</a> </li>
+    </ul>
 </body>
 </html>
